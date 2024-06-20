@@ -1,0 +1,8 @@
+syntax = "proto3";
+option csharp_namespace = "Some.Common";
+
+package Common;
+
+message CommonM3 {
+  string some = 1;
+}

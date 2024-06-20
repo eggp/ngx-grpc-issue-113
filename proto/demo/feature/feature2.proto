@@ -1,0 +1,29 @@
+syntax = "proto3";
+option csharp_namespace = "Some.Common";
+
+package Feature;
+
+message Feature2{
+  message Feature2Level2{
+    message SomeMessage {
+      string some = 1;
+    }
+  }
+}
+
+message SomeMessage2{
+  string some = 1;
+}
+
+message ListRequest{}
+message ListResponse{}
+
+message Get{
+  message GetRequest{}
+  message GetResponse{}
+}
+
+service Feature2Service {
+  rpc List(ListRequest) returns (ListResponse);
+  rpc Get(Get.GetRequest) returns (Get.GetResponse);
+}

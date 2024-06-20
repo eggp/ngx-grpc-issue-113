@@ -1,0 +1,10 @@
+syntax = "proto3";
+option csharp_namespace = "Some.Common";
+
+package Feature;
+
+message Feature1{
+  message SomeMessage {
+    string some = 1;
+  }
+}
